@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+
+	<head>
+
+		<title>Jean Prouvé - <?= $pageTitle ?></title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Jean Prouvé, créateur de génie, humaniste et engagé, profondément attaché à la ville de Nancy. Ses travaux ont influencé des générations d’architectes et de designers." />
+		<meta property="og:title" content="Jean Prouvé - <?= $pageTitle ?>" />
+  		<meta property="og:description" content="Jean Prouvé, créateur de génie, humaniste et engagé, profondément attaché à la ville de Nancy. Ses travaux ont influencé des générations d’architectes et de designers." />
+  		<meta property="og:url" content="http://prouve.nicofolio.fr/<?= $file ?>" />
+  		<meta property="og:image" content="http://prouve.nicofolio.fr/img/slide1.jpg" />
+		
+		<!-- CSS FontAwesome -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"> 
+		<!-- CSS Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Scope+One" rel="stylesheet"> 
+		<!-- CSS Perso -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+		<!-- JS Perso -->
+		<script type="text/javascript" src="js/slider.js"></script>
+		<script type="text/javascript" src="js/mobilier.js"></script>
+
+		<link rel="icon" type="image/x-icon" href="favicon.ico">
+
+	</head>
+
+	<body ontouchstart=""> 
+		<!-- HEADER -->
+		<header>
+			
+			<div class="container flexcontainer">
+				<nav class="bloc flexcontainer">
+					<a href="biographie.php" class="underline-menu">Biographie</a>
+					<a href="mobilier.php" class="underline-menu">Mobilier</a>
+				</nav>	
+				<div class="bloc">
+					<p class="logo"><a href="index.php" id="nom-logo">Jean Prouvé</a></p>
+				</div>
+				<nav class="bloc flexcontainer">
+						<a href="constructions.php" class="underline-menu">Constructions</a>
+					<a href="nancy.php" class="underline-menu">Nancy</a>
+				</nav>
+			</div>
+
+		</header>
+		<!-- Chargement du template PHTML spécifié par le programme PHP -->
+
+        <!-- Chargement du template PHTML spécifié par le programme PHP -->
+        	<?php include 'templates/'.$template.'.phtml' ?>
+
+		<!-- FOOTER -->
+		<footer>
+
+			<div class="container flexcontainer">
+				<div>
+					<nav>
+						<p id="livres"><a  href="livre.php" class="underline-menu">Livre</a></p>
+						<p id="link"><a href="liens.php" class="underline-menu">Liens & Crédits Photos</a></p>
+					</nav>
+				</div>
+				<div id="auteur">
+					<p id="nicolas">Site créé par Nicolas C.</p>
+					<p id="contact"><a id="mail" href="mailto:nchleffer@hotmail.com"><i class="far fa-envelope"></i></a></p>
+				</div>
+			</div>	
+
+		</footer>
+
+	</body>
+
+</html>

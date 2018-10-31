@@ -1,0 +1,923 @@
+/***** GENERAL *********/
+/***********************/
+
+* { 
+    box-sizing: border-box; 
+    outline: none ;
+}
+
+body { 
+    font-family: 'Scope One', serif;
+    color: #666;
+    text-align: center;
+    background: white; 
+}
+
+html {
+    font-size: 62.5%; 
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/*************************************/
+/*************************************/
+/**********   MOBILE FIRST   *********/
+/*************************************/
+/*************************************/
+
+h1, h2, h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    color : black;
+}
+
+h1 {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 25px;
+    color: black;
+    font-weight: thin;
+}
+
+p {
+    font-size: 17px;
+    line-height: 22px;
+}
+
+/****** HEADER *******/
+
+header {
+    background: black;
+}
+
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+header nav a:hover {
+    color: white;
+}
+
+.bloc {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.logo {
+    text-decoration: none;
+    color: goldenrod; 
+    font-size: 35px;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-left:15px;
+    padding-right:15px;
+    border-left: 1px solid goldenrod; 
+    border-right: 1px solid goldenrod;
+    display: inline;
+}
+
+#nom-logo {
+    text-decoration:none;
+    color: goldenrod; 
+}
+
+header .flexcontainer {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+/* Soulignement menu au hover */
+.underline-menu {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+
+  }
+  .underline-menu:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: goldenrod;
+    height: 1px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+ .underline-menu:hover:before, .underline-menu:focus:before, .underline-menu:active:before {
+    left: 0;
+    right: 0;
+  }
+
+/******* FOOTER **********/
+
+footer {
+    margin-top: 50px;
+    background: rgb(65, 64, 63);
+    color: white; 
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+footer #mail {
+    color: white;
+    font-size: 17px;
+}
+
+footer #mail:hover {
+    color: goldenrod;
+}
+
+footer a:hover {
+    color: white;
+}
+
+#auteur {
+    margin-top: 30px;
+}
+
+footer .flexcontainer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+}
+nav p {
+    display: inline;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#livres {
+    border-right: 1px solid white;
+}
+
+#nicolas {
+    margin-bottom: 5px;
+}
+
+#contact {
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+/**********  PAGE INDEX  *************/
+
+#index {
+    padding : 20px;
+}
+
+#avant-propos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sliderImage {
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px #ccc;
+    width: 100%
+}
+
+.point {
+    border-radius: 50%;
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    margin: 10px;
+    background:grey;
+    box-shadow: 0 0 5px #ccc;
+}
+
+.gold {
+    background: goldenrod
+}
+
+#slider {
+    margin-top: 30px;
+}
+
+#avant-propos-part1 {
+    margin-top: 30px;
+    order: 2;
+}
+
+#avant-propos-part2 {
+    order: 1;
+} 
+
+#create {
+    font-style: italic;
+    font-size: 17px;
+    line-height: 30px;
+    color: black;
+    font-weight: 300;
+    text-shadow: 0 0 1px #ccc;
+}
+
+.fa-quote-left {
+    font-size: 30px;
+    color: goldenrod;
+    padding: 10px;
+}
+
+.circle {
+    padding:20px;
+    border-radius: 50px;
+    border: 2px solid goldenrod;
+    float: left;
+    background: white;
+    margin-right: 10px;
+}
+
+.bold {
+    font-weight: bold;
+    color: goldenrod;
+}
+
+#visite {
+    margin-top: 40px;
+}
+
+#visite h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+#visite a {
+    text-decoration: none;
+    color: black;
+}
+
+#visite a:hover {
+    color: goldenrod;
+}
+
+.fa-arrow-alt-circle-right {
+    font-size: 20px;
+}
+
+/*********** PAGE BIOGRAPHIE ************/
+
+#biographie {
+    margin-left: 85px;
+}
+
+#bio, #construct, #design, #nancy-ville {
+    margin-top: 50px;
+}
+
+#prouve {
+
+    font-size: 17px;
+}
+
+#content {
+    text-align: center;  
+}
+
+#bio .source {
+font-size: 15px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+/* timeline */ 
+.timeline {
+  border-left: 4px solid goldenrod;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;    
+  background: fade(white, 3%);
+  color: fade(white, 80%);
+  font-family: 'Scope One', serif;  
+  margin: 50px auto;  
+  letter-spacing: 0.5px;   
+  position: relative;
+  line-height: 1.4em;
+  font-size: 1.03em;   
+  padding-right: 20px;
+  padding-left: 50px; 
+  padding-top : 50px;
+  padding-bottom : 50px;   
+  list-style: none;
+  text-align: left;  
+  font-weight: 100;  
+  max-width: 100%; 
+}
+  
+.event {
+    border-bottom: 1px dashed black;
+    padding-bottom: (50px * 0.5);
+    margin-bottom: 50px;  
+    position: relative;
+}
+.event:last-of-type { 
+      padding-bottom: 0;
+      margin-bottom: 0; 
+      border: none;      
+    }
+
+.event:before, .event:after {
+    position: absolute;
+    display: block;
+    top: 0;
+}
+
+.event:before {
+      left: -185.5px;    
+      color: black;    
+      content: attr(data-date);
+      text-align: right;
+      font-weight: 100;    
+      font-size: 15px;
+      min-width: 120px;
+      font-family: 'Josefin Sans', sans-serif;
+}
+
+.event:after {
+      box-shadow: 0 0 0 4px goldenrod;    
+      left: -57.85px;        
+      background: black;    
+      border-radius: 50%;  
+      height: 11px;
+      width: 11px;
+      content: "";
+      top: 5px;
+}
+
+/************ PAGE MOBILIER ************/
+
+.mobilier {
+    padding : 15px;
+}
+
+#mobilier-full{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+#full-image {
+    width: 100%;
+}
+
+#details {
+    text-align: center;
+}
+
+#details h3 {
+    font-size: 18px;
+}
+
+#listing {
+    margin-top:20px;
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#listing img {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+#listing img:hover {
+    opacity: 0.5;
+    cursor:pointer;
+}
+
+div#details h2{
+    color: black;
+    font-size: 20px;
+}
+
+div#details p {
+font-size: 17px;
+color: #666;
+font-family: 'Scope One', serif;
+}
+
+/******** PAGE CONSTRUCTIONS ********/
+
+#buildings {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+#buildings div {
+    padding:20px;
+    margin-top:40px;
+    margin-left:20px;
+    margin-right:20px;
+    box-shadow: 0 0 5px #ccc;
+    width:350px;
+    height:263px;
+    text-align: center;
+}
+
+div#buildings div#maison-peuple{
+    background: url("../img/500_MaisonPeuple.jpg");
+}
+
+div#buildings div#maison-tropicale {
+    background: url("../img/500_MaisonTropicale.jpg");
+}
+
+div#buildings div#pavillon-alu {
+    background: url("../img/500_Pavillon.jpg");
+}
+
+div#buildings div#maison-malzeville {
+    background: url("../img/500_MaisonMalzeville.jpg");
+}
+
+div#buildings div#ecole-villejuif {
+    background: url("../img/500_Villejuif.jpg");
+}
+
+div#buildings div#cnit {
+    background: url("../img/500_CNIT.jpg");
+}
+
+div#buildings div#tour-nobel {
+    background: url("../img/500_TourNobel.jpg");
+}
+
+div#buildings div#siege-pcf {
+    background: url("../img/500_SiegePC2.jpg");
+}
+
+div#buildings div h2 {
+    font-size: 20px;
+    color: black;
+	letter-spacing: 2px;
+	position: relative;
+	width: 100%;
+	top: 0;
+	z-index: 11;
+	opacity: 0;
+	transition: all 0.3s;
+}
+
+div#buildings div p {
+    font-size: 16px;
+    color: #666;
+	position: relative;
+	width: 100%;
+	top: 0;
+	z-index: 11;
+	opacity: 0;
+	transition: all 0.3s;
+}
+
+div#buildings div:hover h2 {
+	opacity: 1;
+	top: 25%;
+	transition-delay: 0s;
+}
+
+div#buildings div:active h2 {
+	opacity: 1;
+	top: 25%;
+	transition-delay: 0s;
+}
+
+div#buildings div:hover p {
+	opacity: 1;
+	top: 25%;
+	transition-delay: 0s;
+}
+
+div#buildings div:active p {
+	opacity: 1;
+	top: 25%;
+	transition-delay: 0s;
+}
+
+div#buildings div span {
+	z-index: 2;
+	background-color: goldenrod;
+	position: absolute;
+	transition: all 0.7s;
+}
+
+span.top {
+	width: 0%;
+	height: 2px;
+	top: 0;
+	left: 0;
+}
+
+span.right {
+	width: 2px;
+	height: 0%;
+	top: 0;
+	right: 0;
+}
+
+span.bottom {
+	width: 0%;
+	height: 2px;
+	bottom: 0;
+	right: 0;
+}
+
+span.left {
+	width: 2px;
+	height: 0%;
+	bottom: 0;
+	left: 0;
+}
+
+div#buildings div span.voileblanc {
+	z-index: 1;
+	background-color: #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+
+div#buildings div:hover span.bottom, div#buildings div:hover span.top {
+	width: 100%;
+}
+
+div#buildings div:active span.bottom, div#buildings div:active span.top {
+	width: 100%;
+}
+
+
+div#buildings div:hover span.left, div#buildings div:hover span.right {
+	height: 100%;
+}
+
+div#buildings div:active span.left, div#buildings div:active span.right {
+	height: 100%;
+}
+
+
+div#buildings div:hover span.voileblanc {
+	opacity: 0.8;
+}
+
+div#buildings div:active span.voileblanc {
+	opacity: 0.8;
+}
+
+div#buildings div#maison-peuple, div#buildings div#maison-tropicale, div#buildings div#pavillon-alu, div#buildings div#ecole-villejuif, div#buildings div#maison-malzeville, div#buildings div#cnit, div#buildings div#tour-nobel, div#buildings div#siege-pcf {
+	position: relative;
+	background-position: center center;
+}
+
+/**************** PAGE NANCY ********************/
+
+#nancy {
+    padding: 15px;
+}
+
+#ville-nancy h2{
+    color: rgb(70, 60, 60);
+    font-size: 20px;
+}
+
+#mnba, #parcours-prouve {
+    margin-top: 40px;
+}
+
+#ville-nancy p {
+    font-size: 17px;
+    color: #666;
+    font-family: 'Scope One', serif;
+}
+
+#affiche {
+    margin-left:40px;
+    float: right;
+    margin-bottom: 20px;
+    display: none;
+}
+
+#parcours {
+    display: none
+}
+
+.map {
+    box-shadow: 0 0 5px #ccc;
+    border: none;
+    margin-top: 20px;
+}
+
+/**************** PAGE LIENS ********************/
+
+#liens {
+    padding: 15px;
+}
+
+#liens h2 {
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+#liens a {
+    text-decoration: none;
+    color: #666;
+}
+
+#liens a:hover {
+    color: goldenrod;
+} 
+
+/**************** PAGE LIVRE ********************/
+
+#livre {
+    padding: 15px;
+}
+
+#article-catalogue {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+#div-livre {
+    width: 100%;
+}
+
+#livre-image {
+    box-shadow: 0 0 5px #ccc;
+}
+
+#details-livre {
+    text-align: center;
+}
+
+#details-livre h3 {
+    font-size: 18px;
+}
+
+#livre h2 {
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#savoir-plus h2 {
+    font-size: 18px;
+    margin-bottom: 0;
+    padding-bottom: 5px;
+}
+
+#savoir-plus a {
+    text-decoration: none;
+    color: black;
+}
+
+#savoir-plus a:hover {
+    color: goldenrod;
+}
+
+.fa-book {
+    font-size: 20px;
+}
+
+/*********************************/
+/*********************************/ 
+/******** VERSION TABLETTE *******/
+/*********************************/
+/*********************************/
+
+
+/********** HEADER ****************/
+
+@media screen and (min-width:768px) {
+
+/********  Général  ****************/    
+    h1  {
+        font-size: 30px;
+    }
+
+    header {
+        padding-top:20px;
+        padding-bottom: 20px; 
+    }
+    header .flexcontainer {
+        display: flex;
+        flex-direction: row; 
+        justify-content: space-around;
+    }
+
+/********** FOOTER ****************/   
+
+    footer .flexcontainer {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        display: flex;
+        flex-direction: row; 
+        justify-content: space-around;
+    }
+
+    #nicolas, #contact {
+        display: inline;
+        margin-right: 15px;
+    }
+
+    #auteur {
+        margin-top: 0;
+    }
+
+/********** PAGE INDEX ****************/  
+
+    .point {
+        width: 10px;
+        height: 10px;
+    }
+
+/************ PAGE BIOGRAPHIE **********/
+
+    #biographie {
+        margin-left: 0px;
+        padding-top: 0px 15px 15px 15px;;
+        margin: auto;
+    }
+
+    #prouve {
+        background: url(../img/BGdef100X50.jpg);
+        background-position: 2cm 10cm;
+        background-repeat: no-repeat;
+    }
+    .timeline {
+        padding-right: 50px; 
+        max-width: 70%; 
+    }
+    
+  .event:before {
+        left: -217.5px;      
+        font-size: 17px;
+  }
+  
+/******** PAGE MOBILIER ************/
+
+    #mobilier-full {
+        margin-top: 0px;
+    }
+    #details h2 {
+        margin-top: 0px;
+    }
+
+    #listing img {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+/******* PAGE NANCY *********/
+
+    #affiche {
+        display: inline-block;
+        width: 200px;
+    }
+
+    #parcours {
+        display: block
+    }
+
+}
+
+
+
+/*********************************/
+/*********************************/ 
+/******** VERSION DESKTOP *******/
+/*********************************/
+/*********************************/
+
+
+
+@media screen and (min-width:1024px) {
+
+/********** HEADER ****************/
+    header nav a {
+        font-size: 21px;
+    }
+
+/********** PAGE INDEX ****************/    
+    .point {
+        width: 15px;
+        height: 15px;
+    }
+
+    #avant-propos {
+        flex-direction: row;
+        flex-wrap: nowrap; 
+        justify-content: space-around;
+        padding-top: 0px;
+    }
+
+    #avant-propos-part1 {
+        order: 1;
+        margin-top: 10px;
+    }
+    
+    #avant-propos-part2 {
+        order: 2;
+        margin-left: 20px;
+    } 
+
+/********** PAGE MOBILIER ****************/
+
+    #mobilier-full{
+        flex-direction: row;
+        flex-wrap: nowrap; 
+        justify-content: space-around;
+    }
+
+    #div-image {
+        width: 45%;
+    }
+
+    #full-image {
+        width: 55%;
+        margin-right:30px;
+    }
+
+    #details {
+        text-align: left;
+        width: 55%;
+    }
+
+    div#details h2 {
+        font-size: 25px;
+    }
+
+
+    #listing img {
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+/********** PAGE NANCY ****************/
+
+    #affiche {
+        width: 250px;
+    }
+
+/********** PAGE LIVRE ****************/
+
+    #article-catalogue {
+        flex-direction: row;
+        flex-wrap: nowrap; 
+        justify-content: center;
+    }
+
+    #div-livre {
+        width: 40%;
+    }
+
+    #livre-image {
+        width: 70%;
+        margin-right:30px;
+    }
+
+    #details-livre {
+        text-align: left;
+        width: 60%;
+    }
+}

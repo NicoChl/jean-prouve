@@ -1,0 +1,36 @@
+<main class="mobilier">
+
+	<h1 id="design">Mobilier</h1>
+
+	<section id="section-mobilier">
+
+		<article id="mobilier-full" class="flexcontainer">
+
+			<div id="div-image">
+
+				<img id="full-image" src="" alt=""/>  
+
+			</div>
+
+			<div id="details">
+
+				<h2 id="titre"></h2>
+				<h3 id="date"></h3>
+				<p id="description"></p> 
+
+			</div>
+
+		</article>	
+
+		<article id="listing" class=flexcontainer>
+
+			<?php foreach($infoImage  as $image): ?>
+				<div><img class="furniture" src="img/<?= $image['imageSmall'] ?>" id="<?= $image['id_mobilier'] ?>" alt="Jean Prouvé - <?= $image['nom'] ?>"/></div>
+			<?php endforeach; ?>
+
+		</article>
+
+	</section>
+	
+</main>
+
